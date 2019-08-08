@@ -4,17 +4,17 @@ export default function Card(props)
 {
     return (
         <div className="wrapper">
-    <div className="clash-card barbarian">
-      <div className="clash-card__image clash-card__image--barbarian">
-        <img src={props.img_src} alt="barbarian" />
+    <div className="social-card user">
+      <div className="social-card__image social-card__image--user">
+        <img src={props.img_src} alt="user" />
       </div>
-      <div className="clash-card__level clash-card__level--barbarian"><i>@{props.loginName}</i></div>
-      <div className="clash-card__unit-name">{props.fullName}</div>
-      <div className="clash-card__unit-description">
+      <div className="social-card__level social-card__level--user"><i>@{props.loginName}</i></div>
+      <div className="social-card__unit-name">{props.fullName}</div>
+      <div className="social-card__unit-description">
         {props.bio}
       </div>
 
-      <div className="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+      <div className="social-card__unit-stats social-card__unit-stats--user clearfix">
         <div className="one-third">
           <div className="stat">{props.repos}</div>
           <div className="stat-value">Repos</div>
